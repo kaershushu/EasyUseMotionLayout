@@ -12,7 +12,6 @@
 ## MotionLayout有什么特点
 
 1.MotionLayout的动画是完全声明式的，你完全可以通过xml文件的形式来定义复杂动画。假如你需要在通过Java代码定制动画的话，建议你还是用Property Animation吧。
-
 2.兼容Android SDK最低版本是14（`IceCreateSandwich`）
 
 
