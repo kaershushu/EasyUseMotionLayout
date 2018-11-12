@@ -14,8 +14,6 @@
         app:constraintSetEnd="@id/page3"
         app:duration="700">
 
-
-
     </Transition>
 
     <Transition
