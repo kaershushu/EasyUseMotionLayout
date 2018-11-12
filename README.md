@@ -40,7 +40,7 @@ dependencies {
         > attributeName:属性名，一般是`setter`,`getter`方法定义的属性，比如`backgroundColor`。
         > customXXXValue:具体属性值。
   
-- MotionScene:MotionLayout可以产生动画效果的核心，我们所有的动画效果都是在这个文件里定义。
+- MotionScene:产生动画效果的核心，所有的动画效果都是在这个文件里定义。
   - StateSet
   - Transition:定义出发动画动作和帧控制。
   
