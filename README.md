@@ -35,11 +35,17 @@ dependencies {
 
   > Constraint是`约束`的意思，可以简单理解成一个被`ConstraintLayout`包含的独立的View，实际上Constrait代表的是一个View的约束状态。那么ConstaintSet自然就是一组View的集合了。在MotionLayout的概念里其实就是动画执行`起点`和`终点`的一组View的状态。
 
-* MotionScene，`MotionLayout可以产生动画效果的核心，我们所有的动画效果都是在这个文件里定义。`
+* MotionScene:`MotionLayout可以产生动画效果的核心，我们所有的动画效果都是在这个文件里定义。`
 
-  * StateSet
-  * ConstraintSet
-  * Transition
+  * `StateSet`
+  
+  * `ConstraintSet`:定义一组View的端点状态
+  
+    > 配合`Constrant`使用，定义一组View的某一个时间点的状态。
+
+  * `Transition`:定义出发动画动作和帧控制。
+    > 1.动画动作分两种:`OnSwipe`和`OnClick`
+    > 2.帧控制。和ConstraintSet一样，`KeyFrameSet`可以是一个控制动画集合的参数，配合`KeyAttribute`使用。
 
 
 ## 怎样建立一个我们需要的MotionLayout
