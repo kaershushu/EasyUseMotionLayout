@@ -33,21 +33,19 @@ dependencies {
 
 ![MotionLayout结构](https://github.com/kaershushu/EasyUseMotionLayout/blob/HEAD/art/MotionLayout%E7%BB%93%E6%9E%84.png)
 
-- ConstaintSet
+- ConstaintSet:约束，可以简单理解成一个被ConstraintLayout包含的独立的View，实际上Constrait代表的是一个View的约束状态。那么ConstaintSet自然就是一组View的集合了。在MotionLayout的概念里其实就是动画执行起点和终点的一组View的状态。
   
-  > Constraint是约束的意思，可以简单理解成一个被ConstraintLayout包含的独立的View，实际上Constrait代表的是一个View的约束状态。那么ConstaintSet自然就是一组View的集合了。在MotionLayout的概念里其实就是动画执行起点和终点的一组View的状态。
+    * CustomAttribute:配合ConstraintSet使用，动画属性，比如颜色，透明度等等。
+        
+        > attributeName:属性名，一般是`setter`,`getter`方法定义的属性，比如`backgroundColor`。
+        
+        > customXXXValue:具体属性值。
   
 - MotionScene:MotionLayout可以产生动画效果的核心，我们所有的动画效果都是在这个文件里定义。
 
   - StateSet
-  
-  - ConstraintSet:定义一组View的端点状态
-  
-    > 配合Constrant使用，定义一组View的某一个时间点的状态。
   - Transition:定义出发动画动作和帧控制。
-  
     > 1.动画动作分两种:OnSwipe和OnClick
-    
     > 2.帧控制。和ConstraintSet一样，KeyFrameSet可以是一个控制动画集合的参数，配合KeyAttribute使用。
 
 
