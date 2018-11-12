@@ -38,14 +38,14 @@ dependencies {
     * CustomAttribute:配合ConstraintSet使用，动画属性，比如颜色，透明度等等。
         
         > attributeName:属性名，一般是`setter`,`getter`方法定义的属性，比如`backgroundColor`。
-        
         > customXXXValue:具体属性值。
   
 - MotionScene:MotionLayout可以产生动画效果的核心，我们所有的动画效果都是在这个文件里定义。
-
   - StateSet
   - Transition:定义出发动画动作和帧控制。
-    > 1.动画动作分两种:OnSwipe和OnClick
+  
+    > 1.动画动作分两种:OnSwipe和OnClick。
+    
     > 2.帧控制。和ConstraintSet一样，KeyFrameSet可以是一个控制动画集合的参数，配合KeyAttribute使用。
 
 
