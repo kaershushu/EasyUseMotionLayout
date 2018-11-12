@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@id/start"
+        app:duration="1000"
+        app:interpolator="linear">
+        <OnSwipe
+            app:maxAcceleration="1"
+            app:dragDirection="dragRight"
+            app:touchAnchorId="@id/button"
+            app:touchAnchorSide="left" />
+    </Transition>
+
+    <!-- 动画开始，View的状态，不要忘记设置View的宽高，否则页面隐藏掉View -->
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@id/button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+
+    <!-- 动画完成，View的状态-->
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@id/button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </ConstraintSet>
+
+
+</MotionScene>
