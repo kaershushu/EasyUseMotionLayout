@@ -31,13 +31,26 @@ dependencies {
 
 ## MotionLayout你需要知道的概念
 
-* ConstaintSet
+![MotionLayout结构](https://github.com/kaershushu/EasyUseMotionLayout/blob/HEAD/art/MotionLayout%E7%BB%93%E6%9E%84.png)
 
-  > Constraint是`约束`的意思，可以简单理解成一个被`ConstraintLayout`包含的独立的View，实际上Constrait代表的是一个View的约束状态。那么ConstaintSet自然就是一组View的集合了。在MotionLayout的概念里其实就是动画执行`起点`和`终点`的一组View的状态。
+- ConstaintSet:约束，可以简单理解成一个被ConstraintLayout包含的独立的View，实际上Constrait代表的是一个View的约束状态。那么ConstaintSet自然就是一组View的集合了。在MotionLayout的概念里其实就是动画执行起点和终点的一组View的状态。
+  
+    * CustomAttribute:配合ConstraintSet使用，动画属性，比如颜色，透明度等等。
+        
+        > attributeName:属性名，一般是`setter`,`getter`方法定义的属性，比如`backgroundColor`。
+        > customXXXValue:具体属性值。
+  
+- MotionScene:产生动画效果的核心，所有的动画效果都是在这个文件里定义。
 
-* MotionScene
-
-  > MotionLayout可以产生动画效果的核心，我们所有的动画效果都是在这个文件里定义。
+  - StateSet
+  
+  - Transition:定义出发动画动作和帧控制，分两种`OnSwipe`和`OnClick`。
+  
+    * 1.`KeyFrameSet`:帧控制,和ConstraintSet一样，KeyFrameSet可以是一个控制动画集合的参数，配合KeyAttribute或者KeyFramePosition使用。
+        
+       > KeyAttribute:具体属性,用来控制某一帧的形态变化，比如`旋转`，`缩放`等，并不改变View的大小。
+         
+       > KeyPosition:某一帧View大小变化。
 
 
 
@@ -48,6 +61,8 @@ dependencies {
 2.在xml文件夹下新建一个xml文件，`Root Tag`为`MotionScene`。
 
 3.Done！就是这么简单。
+
+
 
 
 
