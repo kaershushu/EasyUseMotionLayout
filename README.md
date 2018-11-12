@@ -35,10 +35,11 @@ dependencies {
 
   > Constraint是`约束`的意思，可以简单理解成一个被`ConstraintLayout`包含的独立的View，实际上Constrait代表的是一个View的约束状态。那么ConstaintSet自然就是一组View的集合了。在MotionLayout的概念里其实就是动画执行`起点`和`终点`的一组View的状态。
 
-* MotionScene
+* MotionScene，`MotionLayout可以产生动画效果的核心，我们所有的动画效果都是在这个文件里定义。`
 
-  > MotionLayout可以产生动画效果的核心，我们所有的动画效果都是在这个文件里定义。
-
+  * StateSet
+  * ConstraintSet
+  * Transition
 
 
 ## 怎样建立一个我们需要的MotionLayout
@@ -48,6 +49,8 @@ dependencies {
 2.在xml文件夹下新建一个xml文件，`Root Tag`为`MotionScene`。
 
 3.Done！就是这么简单。
+
+
 
 
 
