@@ -41,12 +41,16 @@ dependencies {
         > customXXXValue:具体属性值。
   
 - MotionScene:产生动画效果的核心，所有的动画效果都是在这个文件里定义。
+
   - StateSet
-  - Transition:定义出发动画动作和帧控制。
   
-    > 1.动画动作分两种:OnSwipe和OnClick。
-    
-    > 2.帧控制。和ConstraintSet一样，KeyFrameSet可以是一个控制动画集合的参数，配合KeyAttribute使用。
+  - Transition:定义出发动画动作和帧控制，分两种`OnSwipe`和`OnClick`。
+  
+    * 1.`KeyFrameSet`:帧控制,和ConstraintSet一样，KeyFrameSet可以是一个控制动画集合的参数，配合KeyAttribute或者KeyFramePosition使用。
+        
+       > KeyAttribute:具体属性,用来控制某一帧的形态变化，比如`旋转`，`缩放`等，并不改变View的大小。
+         
+       > KeyPosition:某一帧View大小变化。
 
 
 
