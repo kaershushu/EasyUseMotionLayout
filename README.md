@@ -42,9 +42,12 @@ dependencies {
   - StateSet
   
   - ConstraintSet:定义一组View的端点状态
+  
     > 配合Constrant使用，定义一组View的某一个时间点的状态。
   - Transition:定义出发动画动作和帧控制。
+  
     > 1.动画动作分两种:OnSwipe和OnClick
+    
     > 2.帧控制。和ConstraintSet一样，KeyFrameSet可以是一个控制动画集合的参数，配合KeyAttribute使用。
 
 
