@@ -6,30 +6,24 @@
         app:constraintSetStart="@id/page1"
         app:constraintSetEnd="@id/page2"
         app:duration="700">
-
     </Transition>
 
     <Transition
         app:constraintSetStart="@id/page2"
         app:constraintSetEnd="@id/page3"
         app:duration="700">
-
-
-
     </Transition>
 
     <Transition
         app:constraintSetStart="@id/page3"
         app:constraintSetEnd="@id/page2"
         app:duration="700">
-
     </Transition>
 
     <Transition
         app:constraintSetStart="@id/page2"
         app:constraintSetEnd="@id/page1"
         app:duration="700" >
-
     </Transition>
 
     <!-- 第一页状态 -->
